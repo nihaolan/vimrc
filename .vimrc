@@ -113,7 +113,7 @@ set number
 set relativenumber
 
 " 光标所在的当前行高亮。
-set cursorline
+" set cursorline
 
 " 是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示。
 set laststatus=2
@@ -139,7 +139,7 @@ set history=1000
 " ---------------------------------------------------------------------
 
 " vim-airline 主题
-let g:airline_theme='violet'
+" let g:airline_theme='violet'
 
 " 状态行也可以绘制在顶部
 let g:airline_statusline_ontop=1
