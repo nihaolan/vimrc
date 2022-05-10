@@ -59,6 +59,9 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'Shougo/ddc.vim'
 Plug 'shun/ddc-vim-lsp'
 Plug 'luochen1990/rainbow' " 彩虹括号增强版
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rlue/vim-barbaric' " 输入法模式自动切换设置
+
 call plug#end() " 结束
 
 " 安装插件:
@@ -208,7 +211,13 @@ let g:rainbow_active = 1 " 启用彩虹括号
 " -------------------------------------------------------------------------
 
 " NerdTree 在 .vimrc 中的常用配置
-let g:NERDTreeShowLineNumbers=1  " 是否显示行号
+" 是否显示行号
+let g:NERDTreeShowLineNumbers=1
+let NERDTreeAutoCenter=1
 let g:NERDTreeHidden=1     "不显示隐藏文件
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
+
+" --------------------------------------------------------------------------
+" 在所有模式下启用 emmet
+let g:user_emmet_mode='a'
